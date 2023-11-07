@@ -1,6 +1,6 @@
 FROM centos:7
 RUN yum install java-openjdk-11
-ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.95/bin/apache-tomcat-8.5.95.tar.gz
+ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.95/bin/apache-tomcat-8.5.95.tar.gz ./
 WORKDIR /opt/
 RUN tar-xzf/apache-tomcat-8.5.95.tar.gz -C /opt
 WORKDIR /apache-tomcat-8.5.95/
